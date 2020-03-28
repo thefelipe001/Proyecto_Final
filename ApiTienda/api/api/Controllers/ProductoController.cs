@@ -11,6 +11,7 @@ namespace api.Controllers
     [Route("[controller]")]
     public class ProductoController : Controller
     {
+        private readonly IStudentService _studentService;
 
         public ProductoController(IStudentService studentService)
         {
